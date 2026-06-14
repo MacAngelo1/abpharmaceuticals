@@ -50,8 +50,8 @@ body {
 }
 
 .header {
-  position: fixed;
-  top: 0;
+  position: sticky;
+  top: -5px;
   z-index: 20;
   background: rgba(255, 255, 255, .88);
   backdrop-filter: blur(16px);
@@ -408,32 +408,31 @@ h2 {
   align-items: end;
   font-size: 1.35rem;
   padding: 5px;
-  background: linear-gradient(140deg, var(--primary), #72d943);
+  background: white;
 }
 
 .tile img {
   height: 100%;
   width: 100%;
-  border: #05156c solid 1px;
   border-radius: 18%;
 }
 
 .t1 {
-  background: linear-gradient(140deg, #77859e, #a1fc9e);
+  background: white;
  
 }
 .t2 {
-  background: linear-gradient(140deg, #77859e, #a1fc9e);
-  transform: translateY(28px);
+  background: white;
+  transform: translateY(20px);
 }
 
 .t3 {
-  background: linear-gradient(140deg, #77859e, #a1fc9e);
+  background: white;
 }
 
 .t4 {
-  background: linear-gradient(140deg, #77859e, #a1fc9e);
-  transform: translateY(28px);
+  background: white;
+  transform: translateY(20px);
 }
 
 .check-list {
@@ -983,7 +982,7 @@ div.footer-grid > div {
   display: flex;
   align-items: end;
   font-size: 1.35rem;
-  background: linear-gradient(140deg, #abc8f9, #a1df85);
+  background: white;
 }
 
 .contact-form .btn {

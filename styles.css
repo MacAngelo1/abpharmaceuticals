@@ -396,7 +396,7 @@ h2 {
 .image-collage {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 1rem;
+  gap: 1.2rem;
 }
 
 .tile {
@@ -404,6 +404,7 @@ h2 {
   font-weight: 800;
   color: #fff;
   display: flex;
+  border-radius: 19%;
   align-items: end;
   font-size: 1.35rem;
   padding: 5px;
@@ -414,20 +415,24 @@ h2 {
   height: 100%;
   width: 100%;
   border: #05156c solid 1px;
-  border-radius: 50px;
+  border-radius: 18%;
 }
 
+.t1 {
+  background: linear-gradient(140deg, #77859e, #a1fc9e);
+ 
+}
 .t2 {
-  background: linear-gradient(140deg, #08234e, #0b68ef);
+  background: linear-gradient(140deg, #77859e, #a1fc9e);
   transform: translateY(28px);
 }
 
 .t3 {
-  background: linear-gradient(140deg, #24bf73, #d8ffca);
+  background: linear-gradient(140deg, #77859e, #a1fc9e);
 }
 
 .t4 {
-  background: linear-gradient(140deg, #132f59, #7db7ff);
+  background: linear-gradient(140deg, #77859e, #a1fc9e);
   transform: translateY(28px);
 }
 
@@ -616,6 +621,7 @@ h2 {
   gap: 1rem;
 }
 
+
 .contact-form input,
 .contact-form select,
 .contact-form textarea {
@@ -708,11 +714,12 @@ div.footer-grid > div {
     position: absolute;
     left: 4%;
     right: 4%;
-    top: 88px;
+    top: 85px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     padding: 1.4rem;
+    padding-top: 2rem;
     background: #fff;
     border-radius: 22px;
     box-shadow: var(--shadow);
@@ -721,6 +728,7 @@ div.footer-grid > div {
     transform: translateY(-15px);
     pointer-events: none;
     transition: .35s ease;
+    height: 52vh;
   }
 
   .nav-links.open {
@@ -753,12 +761,56 @@ div.footer-grid > div {
     height: 420px;
   }
 
+  .image-collage {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.8rem;
+}
+
   .footer-grid {
     grid-template-columns: 1fr;
   }
 }
 
 @media (max-width: 560px) {
+
+  .topbar{
+    display:none
+  }
+  .contact-grid{
+  max-width: 95vw;
+}
+
+ .image-collage {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.5rem;
+}
+
+.section-copy p{
+  max-width: 95%;
+}
+/* .section-copy h2{
+  max-width: 95%;
+} */
+
+.contact-form {
+  max-width: 87vw;
+  padding: 20px;
+}
+
+.contact-form :nth-child(1),
+.contact-form :nth-child(2),
+.contact-form :nth-child(3), 
+.contact-form :nth-child(4), 
+.contact-form :nth-child(5),
+.contact-form :nth-child(6){
+  max-width: 90%;
+}
+
+.contact-form input{
+  max-width: 95%;
+}
   .section {
     padding: 64px 0;
   }
@@ -801,17 +853,14 @@ div.footer-grid > div {
   }
 
   .hero h1 {
-    font-size: 2.73rem;
+    font-size: 2.35rem;
     line-height: 1.2;
   }
 
-  .btn {
-    padding: 0rem 7.3rem;
-    font-size: 1.15rem;
-  }
+  
 
   .hero p {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
 
   .doctor-art {
@@ -819,11 +868,11 @@ div.footer-grid > div {
   }
 
   p.lead {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
   }
 
   p.eyebrow {
-    margin-top: 10px;
+    margin-top: 8px;
   }
 
   .btn.ghost {
@@ -831,10 +880,24 @@ div.footer-grid > div {
     color: var(--nlue) !important;
     border: 1px solid #cfe2ff;
     box-shadow: none;
-    padding: 0rem 7.7rem;
-    font-size: 1.21rem;
+    padding: 0rem 5.5rem;
+    font-size: 1.11rem;
   }
 
+  .btn {
+    padding: 0rem 4.8rem;
+    font-size: 1.11rem;
+  }
+
+  .category-board :nth-child(8),
+  .category-board :nth-child(7) {
+    display: none;
+  }
+
+  .mini-stats span {
+    padding: 0.5rem 1.3rem;
+    font-size: 0.8rem;
+  }
   .cards,
   .category-board,
   .team-grid {
@@ -920,6 +983,10 @@ div.footer-grid > div {
   display: flex;
   align-items: end;
   font-size: 1.35rem;
-  background: linear-gradient(140deg, var(--primary), #72d943);
+  background: linear-gradient(140deg, #abc8f9, #a1df85);
 }
-}
+
+.contact-form .btn {
+  padding: 0.5rem 1.8rem;
+  font-size: 1.1rem;
+}}
